@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn11.xsd" id="definitions" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="sichtvermerk" name="Sichtvermerk">
+    <decisionTable id="decisionTable">
+      <input id="input1" label="Statusgruppe">
+        <inputExpression id="inputExpression1" typeRef="string">        <text>statusGroup</text>
+</inputExpression>
+      </input>
+      <input id="InputClause_0ra92l6" label="Handlungskontext">
+        <inputExpression id="LiteralExpression_14wajir" typeRef="string">        <text>contextOfAction</text>
+</inputExpression>
+      </input>
+      <output id="output1" label="Zeichnungspflichtig" name="signingRole" typeRef="string" />
+      <rule id="row-825815337-1">
+        <inputEntry id="UnaryTests_1ragvuo">        <text><![CDATA["AMioderSOMi"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_1raicvt">        <text><![CDATA["Linienfunktion"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1ohnni6">        <text><![CDATA["Linienvorgesetzter"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-825815337-2">
+        <inputEntry id="UnaryTests_0eshz8j">        <text><![CDATA["AMioderSOMi"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_1murq8e">        <text><![CDATA["Projektarbeit"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1ab37e5">        <text><![CDATA["Projektleiter"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-825815337-3">
+        <inputEntry id="UnaryTests_0pbvnw5">        <text><![CDATA["AMioderSOMi"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_0ovgide">        <text><![CDATA["Selbstverwaltung"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1upuclt">        <text><![CDATA["Gremienleiter"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-825815337-4">
+        <inputEntry id="UnaryTests_14dr233">        <text><![CDATA["Professor"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_1uuk4rx">        <text><![CDATA["empty"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1cnpaz9">        <text></text>
+</outputEntry>
+      </rule>
+      <rule id="row-825815337-5">
+        <inputEntry id="UnaryTests_04osxxc">        <text><![CDATA["Student"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_00xz9nl">        <text><![CDATA["Forschung"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0g8hs6v">        <text><![CDATA["Professor"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-825815337-6">
+        <inputEntry id="UnaryTests_040nj56">        <text><![CDATA["Student"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_0php4od">        <text><![CDATA["Selbstverwaltung"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0j2eg27">        <text><![CDATA["Gremienleiter"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-825815337-7">
+        <inputEntry id="UnaryTests_15n5uih">        <text><![CDATA["ExternerMA"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_0o4rk5h">        <text><![CDATA["Projektarbeit"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_04dpx8h">        <text><![CDATA["Projektleiter"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-825815337-8">
+        <inputEntry id="UnaryTests_0jvo7c1">        <text><![CDATA["Student"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_0pm3z0j">        <text><![CDATA["Projektarbeit"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1uvrw44">        <text><![CDATA["Projektleiter"]]></text>
+</outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
